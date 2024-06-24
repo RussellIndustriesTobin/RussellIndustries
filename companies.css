@@ -1,0 +1,241 @@
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+    text-decoration: none !important;
+}
+
+body {
+      background: black;
+      background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.linkedin-follow-button {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: rgb(105, 152, 223);
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 20px;
+    position: relative;
+    transition: all 0.3s ease; /* Add transition for color change */
+}
+
+.linkedin-follow-button:hover {
+    background: #f77062;
+    transition: all 0.3s ease; /* Maintain the transition effect */
+}
+
+
+.nav-buttons {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: flex-end;
+}
+
+
+.nav-text {
+    font-size: 16px;
+    color: white;
+    margin: 0 5px; /* Set the right and left margins to 10px */
+    border: none;
+    background: none;
+}
+
+.nav-text:hover {
+        background-color: #ff8177;
+ background-image: linear-gradient(to right, #29abf4, #A1DAF5);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+   transition: all 0.3s ease;
+}
+#title {
+    margin-top: 200px;
+    display: flex;
+     flex-direction: column;
+    align-items: flex-start; /* Align title to the left */
+    margin-left: 20px; /* Adjust left margin as needed */
+    font-size: 50px;
+        margin-bottom: 100px; /* Adjust this value as needed to reduce the gap */
+
+}
+
+#mini-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto; 
+    font-size: 45px;
+}
+
+.section-heading {
+ background-color: #ff8177;
+ background-image: linear-gradient(to right, #29abf4, #A1DAF5);
+
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#sub-title {
+    display: flex;
+    margin-top: 0; /* Adjust this value as needed to reduce the gap */
+     flex-direction: column;
+    align-items: center; /* Align title to the left */
+     background-color: #ff8177;
+ background-image: linear-gradient(to right, #ff0844, #ffb199);
+    font-size: 35px;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#background-text {
+    display:inline-block;
+    width: 399px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 41px;
+    background-color: white;
+    position: absolute; /* or 'relative' */
+    z-index: -1; /* to ensure it sits behind */
+    top: 244px; /* adjust as needed */
+    left: 9px; /* adjust as needed */
+    right: 0; /* adjust as needed */
+    bottom: 0; /* adjust as needed */
+
+}
+#logo-img {
+    width:200px;
+    padding: 10px;
+}
+
+#support {
+    margin-right: 20px;
+}
+
+#cbb-img {
+    margin-left: 200px;
+}
+.text-section {
+    color: white; 
+    text-shadow: 1px 1px 0 #000;
+    margin-left: 20px;
+}
+
+.container {
+    margin-top: 0px;
+    background: linear-gradient(to right, black 10%, #1F263D 10%, #1F263D 90%, black 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+.description {
+    display: block; /* Changed from inline-block to block */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    width: 25%; /* Adjusted width to 100% of the container */
+    color: white;
+    padding: 10px; /* Adjust padding as needed */
+    font-size: 17px;
+    text-shadow: 1px 1px 0 #000;
+    text-align: left; /* Align text to the left */
+}
+
+#text-container {
+   margin-top: 50px;
+    background: linear-gradient(to right, black 10%, #1F263D 10%, #1F263D 90%, black 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.companies-img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+#zincaloy {
+    /*
+    background: url("images/zincaloy-banner.png") no-repeat center center;
+    background-size: cover;
+    background-position: top center;
+    */
+    margin-top: 0; /* Aligns with the top of the section */
+    position: relative;
+    z-index: 0; /* Ensures the image is below the navbar */
+}
+
+#csm {
+    /*
+    background: url("images/cbb-banner.png") no-repeat center center;
+    background-size: cover;
+    background-position: top center;
+    */
+    margin-top: 0; /* Aligns with the top of the section */
+    position: relative;
+    z-index: 0; /* Ensures the image is below the navbar */
+}
+
+#cbb {
+    /*
+    background: url("images/cbb-banner.png") no-repeat center center;
+    background-size: cover;
+    background-position: top center;
+    */
+    margin-top: 0; /* Aligns with the top of the section */
+    position: relative;
+    z-index: 0; /* Ensures the image is below the navbar */
+}
+
+a:hover {
+    color: gold !important; 
+}
+
+.icons {
+    width: 60px;
+    height: 60px;
+}
+
+.content-name {
+    color: #858585;
+    font-weight: bold;
+}
+
+#contact-lbl {
+    text-align: center;
+}
+
+#decription-lbl {
+    margin-left: 20px;
+    margin-right: 60px;
+    padding-right: 210px;
+    text-align: center;
+}

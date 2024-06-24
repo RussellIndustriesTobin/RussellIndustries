@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet" />
+    <!-- Where I got the text editor API from https://quilljs.com/docs/quickstart -->
+    <nav>
+         <img id="logo-img" src="./images/logo.png">
+        <div class="nav-buttons">
+            <a href="https://ca.linkedin.com/company/russell-industries-corp" class="linkedin-follow-button"  target="_blank">
+            Follow Us
+            </a>
+            <a href="/index.html"><button class="nav-text">Home</button></a>
+            <a href="/companies.html"><button class="nav-text">Companies</button></button></a>
+            <a href="/support.html"><button class="nav-text" id="support">Support</button></button></a>
+        </div>
+    </nav>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title></title>
+        <link rel="stylesheet" href="support.css">
+    </head>
+    <body>
+        <div>
+            <h1 class="title">Help & Support</h1>
+            <div id="help">   
+                <input class = "input-section" id="email" type="text" placeholder="Requester"></input>
+                <input class = "input-section" id="subject" type="text" placeholder="Subject"></input>
+                <div id = "text-area">
+                    <div id="editor">
+                    <p><br /></p>
+                    </div>
+                    <div id="background-text"></div>
+                    <!-- Include the Quill library -->
+                    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+                    <style>
+        /* Custom styles for the Quill editor */
+        .ql-editor {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: black;
+            /* Add more styles as needed */
+        }
+
+        /* Custom border for the Quill editor */
+        .ql-container {
+            border: 2px solid #000;
+            border-radius: 5px;
+            max-height: 500px;
+        }
+    </style>
+
+                    <!-- Initialize Quill editor -->
+                    <script>
+                    const quill = new Quill('#editor', {
+                        theme: 'snow'
+                    });
+                    </script>
+                                    </div>
+                    <button id="ticket">Send Ticket</button>
+                    <label id="company-name"> Company: </label>
+    <select id="myDropdown">
+        <option value="Option 1">...</option>
+        <option value="Option 2">Allerion</option>
+        <option value="Option 3">BBL</option>
+        <option value="Option 3">CBB</option>
+        <option value="Option 3">CME</option>
+         <option value="Option 3">CSC</option>
+         <option value="Option 3">CSM</option>
+         <option value="Option 3">GTI</option>
+         <option value="Option 3">KP Bronze</option>
+          <option value="Option 3">PWR</option>
+         <option value="Option 3">RIC</option>
+          <option value="Option 3">Seabreeze</option>
+         <option value="Option 3">Synex</option>
+          <option value="Option 3">Zincaloy</option>
+    </select>
+
+</div>
+
+                                </div>
+        </div>
+        <script type="module" src="support.js"></script>
+    </body>
+</html>

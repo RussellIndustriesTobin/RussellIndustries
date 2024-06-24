@@ -1,0 +1,370 @@
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+    text-decoration: none !important;
+}
+
+body {
+      background: black;
+      background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.linkedin-follow-button {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: rgb(105, 152, 223);
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 20px;
+    position: relative;
+    transition: all 0.3s ease; /* Add transition for color change */
+}
+
+.linkedin-follow-button:hover {
+    background: #f77062;
+    transition: all 0.3s ease; /* Maintain the transition effect */
+}
+
+
+.nav-buttons {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: flex-end;
+}
+
+
+.nav-text {
+    font-size: 16px;
+    color: white;
+    margin: 0 5px; /* Set the right and left margins to 10px */
+    border: none;
+    background: none;
+}
+
+.nav-text:hover {
+        background-color: #ff8177;
+ background-image: linear-gradient(to right, #29abf4, #A1DAF5);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+   transition: all 0.3s ease;
+}
+
+#title {
+    margin-top: 200px;
+    display: flex;
+     flex-direction: column;
+    align-items: flex-start; /* Align title to the left */
+    margin-left: 20px; /* Adjust left margin as needed */
+    font-size: 50px;
+        margin-bottom: 20px; /* Adjust this value as needed to reduce the gap */
+
+}
+
+#mini-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto; 
+    font-size: 45px;
+}
+
+.section-heading {
+ background-color: #ff8177;
+ background-image: linear-gradient(to right, #29abf4, #A1DAF5);
+
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#title, #sub-title {
+    display: inline-block;
+}
+
+#industrial-img {
+    display: flex;
+    margin-top: 120px;
+    width: 420px;
+    float: right;
+    margin-left: 20px; /* Adjust as needed for spacing */
+    margin-right: 100px;
+}
+
+#sub-title {
+    display: flex;
+    margin-top: 0; /* Adjust this value as needed to reduce the gap */
+     flex-direction: column;
+    align-items: flex-start; /* Align title to the left */
+    margin-left: 20px; /* Adjust left margin as needed */
+     background-color: #ff8177;
+ background-image: linear-gradient(to right, #ff0844, #ffb199);
+    font-size: 35px;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#mini-title {
+    display: flex;
+    margin-top: 0; /* Adjust this value as needed to reduce the gap */
+     flex-direction: column;
+    align-items: flex-start; /* Align title to the left */
+    margin-left: 20px; /* Adjust left margin as needed */
+    font-size: 20px;
+      margin-bottom: 400px;
+      color: white;
+}
+
+#btn-companies {
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: rgb(105, 152, 223);
+    border-radius: 4px;
+    text-decoration: none !important;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    transition: all 0.3s ease; /* Add transition for color change */
+    margin-bottom: 300px;
+}
+
+
+#btn-companies:hover {
+    background: #f77062;
+    transition: all 0.3s ease; /* Maintain the transition effect */
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white; 
+    padding: 10px 40px;
+    font-size: 18px;
+    text-shadow: 1px 1px 0 #000;
+    margin-left: 10%; /* Adjust percentage as needed */
+    margin-right: 10%; /* Adjust percentage as needed */
+    padding: 10px 20px; /* Reduced side padding */
+}
+
+#prez-img {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid white;
+    border-radius: 50px;
+}
+
+#map-img {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#president {
+    text-align: center;
+    color: white; 
+    padding: 10px 40px;
+    font-size: 20px;
+    text-shadow: 1px 1px 0 #000;
+}
+
+#logo-img {
+    width:200px;
+    padding: 10px;
+}
+
+#support {
+    margin-right: 20px;
+}
+
+.profile-card {
+    display: inline-block;
+    margin-top: 50px;
+  background: linear-gradient(to bottom, #000000 25%, #1F263D 25%);
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  margin-left: 50px;
+  width: 300px; /* Adjust as needed */
+}
+#employee-name {
+    color: #858585;
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-weight: bold;
+}
+#position {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.profile-image {
+  height: 140px; /* Adjust as needed */
+  width: 140px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+#daniel {
+    background: url('./images/leader.jpg') no-repeat center center;
+     background-size: 100%; 
+  border-radius: 50%;
+}
+
+#vili {
+    background: url('./images/vili.jfif') no-repeat center center;
+     background-size: 100%; 
+  border-radius: 50%;
+}
+
+#tobin {
+    background: url('./images/tobin.jfif') no-repeat center center;
+     background-size: 100%; 
+  border-radius: 50%;
+}
+
+#shane {
+    background: url('./images/shane.jfif') no-repeat center center;
+     background-size: 100%; 
+  border-radius: 50%;
+}
+
+
+.outer {
+  margin: 50px;
+  display: flex;
+    justify-content: center;
+     margin-bottom: 300px;
+}
+
+.button {
+  border: 1px solid black;
+  width: 400px;
+  height: 30px;
+  display: block;
+padding: 10px 15px;
+    background: linear-gradient(to right, #f77062 50%, rgb(105, 152, 223) 50%);
+    border-radius: 4px;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .4s ease-out;
+}
+
+.button:hover {
+  background-position: left bottom;
+}
+
+.text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px; 
+  color: #fff;
+  transition: all .6s ease-out;
+  display: block;
+}
+
+.text:hover {
+  color: white;  
+}
+
+.linkedin-icon {
+    width:50px;
+}
+.social-media {
+    background-color: #007BB5;
+    width: 50px;
+    height: 50px;
+      display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    transition-duration: 0.3s; 
+}
+
+.social-media:hover {
+     background-color: white;
+}
+
+.profile-cards-row {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+#bottom-row {
+    margin-bottom: 300px;
+}
+
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.contact-icons {
+  height: 50px;
+  width: 50px;
+  /* Remove any margin if present */
+}
+
+.contact-text {
+  color: white;
+  /* Add left margin for spacing if needed */
+  margin-left: 30px;
+  font-weight: 100;
+}
+
+#phone-icon, #fax-icon, #location-icon {
+  display: flex;
+  margin-left: 225px;
+  align-items: center;
+  justify-content: flex-start; /* Aligns content to the left */
+}
