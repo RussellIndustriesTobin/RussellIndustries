@@ -368,3 +368,11 @@ padding: 10px 15px;
   align-items: center;
   justify-content: flex-start; /* Aligns content to the left */
 }
+
+#contact-div {
+      margin-top: 0px;
+    background: linear-gradient(to right, black 10%, #1F263D 10%, #1F263D 90%, black 90%);
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
