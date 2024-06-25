@@ -13,13 +13,15 @@
             <a href="support.html"><button class="nav-text" id="support">Support</button></a>
         </div>
     </nav>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
         <title></title>
         <link rel="stylesheet" href="support.css">
     </head>
     <body>
-        <div>
-            <h1 class="title">Help & Support</h1>
+        <h1 class="section-heading" id="title">Help & Support</h1>
+        <h1 id="sub-title">Submit a ticket</h1>
+        <div id = "contact-div">
+            <h1 id="details">Details:</h1>
             <div id="help">   
                 <input class = "input-section" id="email" type="text" placeholder="Requester"></input>
                 <input class = "input-section" id="subject" type="text" placeholder="Subject"></input>
@@ -54,7 +56,6 @@
                     });
                     </script>
                                     </div>
-                    <button id="ticket">Send Ticket</button>
                     <label id="company-name"> Company: </label>
     <select id="myDropdown">
         <option value="Option 1">...</option>
@@ -72,6 +73,11 @@
          <option value="Option 3">Synex</option>
           <option value="Option 3">Zincaloy</option>
     </select>
+     <div class="outer">
+        <div class="button" id="ticket">
+            <div class="text">Send ticket</div>
+        </div>
+    </div>
 
 </div>
 
