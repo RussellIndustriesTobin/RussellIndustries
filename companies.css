@@ -147,12 +147,16 @@ nav {
 
 .container {
     margin-top: 0px;
-    background: linear-gradient(to right, #1D1330 10%, #1F263D 10%, #1F263D 90%, #1D1330 90%);
+    background: linear-gradient(to right, rgba(29, 19, 48, 0) 0%, rgba(29, 19, 48, 0) 10%, rgba(31, 38, 61, 1) 10%, rgba(31, 38, 61, 1) 90%, rgba(31, 38, 61, 0) 90%, rgba(29, 19, 48, 0) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
 }
+
+
+
+
 
 
 .description {
@@ -172,7 +176,7 @@ nav {
 
 #text-container {
    margin-top: 50px;
-    background: linear-gradient(to right, #1D1330 10%, #1F263D 10%, #1F263D 90%, #1D1330 90%);
+    background: linear-gradient(to right, rgba(29, 19, 48, 0) 0%, rgba(29, 19, 48, 0) 10%, rgba(31, 38, 61, 1) 10%, rgba(31, 38, 61, 1) 90%, rgba(31, 38, 61, 0) 90%, rgba(29, 19, 48, 0) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,4 +255,58 @@ a:hover {
     text-align: center;
     z-index: -1;
     height: 500px; /* Adjust as needed */
+}
+
+#elipses-img-2 {
+    position: absolute;
+    top: 800px; /* Adjust as needed */
+    right: 0; /* Align to the right */
+    text-align: right; /* Align content within the container */
+    z-index: -1;
+    height: 600px; /* Adjust as needed */
+}
+
+#elipses-img-3 {
+    position: absolute;
+    top: 1900px; /* Adjust as needed */
+    left: -30px; /* Align to the right */
+    text-align: left; /* Align content within the container */
+    z-index: -1;
+    height: 900px; /* Adjust as needed */
+}
+
+#elipses-img-4 {
+    position: absolute;
+    top: 2900px; /* Adjust as needed */
+    right: 0; /* Align to the right */
+    text-align: right; /* Align content within the container */
+    z-index: -1;
+    height: 700px; /* Adjust as needed */
+}
+
+#elipses-img-5 {
+    position: absolute;
+    top: 3800px; /* Adjust as needed */
+    left: -30px; /* Align to the right */
+    text-align: left; /* Align content within the container */
+    z-index: -1;
+    height: 600px; /* Adjust as needed */
+}
+
+#elipses-img-6 {
+    position: absolute;
+    top: 4700px; /* Adjust as needed */
+    right: 0; /* Align to the right */
+    text-align: right; /* Align content within the container */
+    z-index: -1;
+    height: 700px; /* Adjust as needed */
+}
+
+#elipses-img-7 {
+    position: absolute;
+    top: 5600px; /* Adjust as needed */
+    left: -30px; /* Align to the right */
+    text-align: left; /* Align content within the container */
+    z-index: -1;
+    height: 900px; /* Adjust as needed */
 }
