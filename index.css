@@ -377,7 +377,7 @@ padding: 10px 15px;
     padding-bottom: 20px;
 }
 
-#elipses-img {
+#elipses-img-1 {
     position: absolute;
     top: -50px; /* Adjust as needed */
     left: 0;
@@ -386,3 +386,21 @@ padding: 10px 15px;
     z-index: -1;
     height: 500px; /* Adjust as needed */
 }
+#elipses-img-2 {
+    position: absolute;
+    top: 800px; /* Adjust as needed */
+    right: 0; /* Align to the right */
+    text-align: right; /* Align content within the container */
+    z-index: -1;
+    height: 600px; /* Adjust as needed */
+}
+
+#elipses-img-3 {
+    position: absolute;
+    top: 1900px; /* Adjust as needed */
+    left: -30px; /* Align to the right */
+    text-align: left; /* Align content within the container */
+    z-index: -1;
+    height: 900px; /* Adjust as needed */
+}
+
