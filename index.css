@@ -134,14 +134,19 @@ nav {
         }
 
 #mini-title {
-    display: flex;
-    margin-top: 0; /* Adjust this value as needed to reduce the gap */
-     flex-direction: column;
-    align-items: flex-start; /* Align title to the left */
-    margin-left: 20px; /* Adjust left margin as needed */
-    font-size: 20px;
-      margin-bottom: 400px;
-      color: white;
+  display: flex;
+  position: absolute;
+  margin-top: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+  font-size: 20px;
+  color: white;
+  overflow: hidden; /* Prevent text from pushing other elements down */
+}
+
+#space {
+      margin-bottom: 455px;
 }
 
 #btn-companies {

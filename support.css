@@ -261,6 +261,14 @@ padding: 10px 15px;
   color: white;  
 }
 
+.button.clicked {
+  width: 50px; /* Adjusted width */
+  padding: 10px 0; /* Adjust padding to maintain button height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #contact-div {
     background: linear-gradient(to right, #1D1330 10%, #1F263D 10%, #1F263D 90%, #1D1330 90%);
     margin-bottom: 50px;
