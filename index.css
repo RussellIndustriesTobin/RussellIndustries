@@ -54,17 +54,12 @@ nav {
     margin: 0 5px; /* Set the right and left margins to 10px */
     border: none;
     background: none;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .nav-text:hover {
-        background-color: #ff8177;
- background-image: linear-gradient(to right, #29abf4, #A1DAF5);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-   transition: all 0.3s ease;
+    color: white; /* Change the text color on hover */
+    box-shadow: inset 100px 0 0 0  #29abf4; /* Add the box shadow on hover */
 }
 
 #title {
@@ -75,6 +70,7 @@ nav {
     margin-left: 20px; /* Adjust left margin as needed */
     font-size: 50px;
         margin-bottom: 20px; /* Adjust this value as needed to reduce the gap */
+           animation: revealText 2s ease-in-out forwards;
 
 }
 
@@ -112,20 +108,30 @@ nav {
 }
 
 #sub-title {
-    display: flex;
-    margin-top: 0; /* Adjust this value as needed to reduce the gap */
-     flex-direction: column;
-    align-items: flex-start; /* Align title to the left */
-    margin-left: 20px; /* Adjust left margin as needed */
-     background-color: #ff8177;
- background-image: linear-gradient(to right, #ff0844, #ffb199);
-    font-size: 35px;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 20px;
+            background-color: #ff8177;
+            background-image: linear-gradient(to right, #ff0844, #ffb199);
+            font-size: 35px;
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+        }
+
+        @keyframes revealText {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
 #mini-title {
     display: flex;
@@ -223,7 +229,16 @@ nav {
     padding: 20px;
     margin-left: 50px;
     width: 300px; /* Adjust as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a drop shadow */
+    
 }
+
+.profile-card:hover {
+    background-color: rgba(31, 38, 61, 0.8); /* Change the background color on hover */
+     outline: 2px solid white; /* Add a white outline */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+}
+
 
 #employee-name {
     color: #858585;
@@ -319,17 +334,37 @@ padding: 10px 15px;
     background-color: #007BB5;
     width: 50px;
     height: 50px;
-      display: flex;
+    display: flex;
     justify-content: center;
+    align-items: center; /* Vertically center the icon */
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-    transition-duration: 0.3s; 
+    transition-duration: 0.3s;
+    position: relative; /* Add relative positioning */
 }
 
 .social-media:hover {
-     background-color: white;
+    background-color: white;
+    transform: translateY(-5px); /* Move the icon up slightly */
 }
+
+.social-media::after {
+    content: "LinkedIn"; /* Add the title text */
+    position: absolute;
+    bottom: -20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: white;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Add a smooth transition for visibility */
+}
+
+.social-media:hover::after {
+    opacity: 1; /* Show the title on hover */
+}
+
 
 .profile-cards-row {
     display: flex;

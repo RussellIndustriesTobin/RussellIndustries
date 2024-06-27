@@ -54,17 +54,12 @@ nav {
     margin: 0 5px; /* Set the right and left margins to 10px */
     border: none;
     background: none;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .nav-text:hover {
-        background-color: #ff8177;
- background-image: linear-gradient(to right, #29abf4, #A1DAF5);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-   transition: all 0.3s ease;
+    color: white; /* Change the text color on hover */
+    box-shadow: inset 100px 0 0 0  #29abf4; /* Add the box shadow on hover */
 }
 #title {
     margin-top: 200px;
@@ -74,6 +69,7 @@ nav {
     margin-left: 20px; /* Adjust left margin as needed */
     font-size: 50px;
         margin-bottom: 100px; /* Adjust this value as needed to reduce the gap */
+           animation: revealText 2s ease-in-out forwards;
 
 }
 
@@ -222,9 +218,30 @@ nav {
     z-index: 0; /* Ensures the image is below the navbar */
 }
 
-a:hover {
-    color: gold !important; 
+#link {
+    position: relative;
+    transition: color 0.3s ease-in-out;
 }
+
+#link::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 3px;
+    background-color: gold; /* Set your desired color */
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+#link:hover {
+    color: gold !important; /* Change the text color on hover */
+}
+
+#link:hover::before {
+    transform: scaleX(1); /* Expand the underline on hover */
+}
+
 
 .icons {
     width: 60px;
@@ -310,3 +327,14 @@ a:hover {
     z-index: -1;
     height: 900px; /* Adjust as needed */
 }
+
+@keyframes revealText {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }

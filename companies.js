@@ -111,7 +111,7 @@ function createCompanySection(company) {
                     </h3>` : ''}
                     ${company.website ? `<h3 class="text-section">
                         <img src="./images/website-icon.png" alt="Website Icon" class = "icons" style="vertical-align: middle;">
-                        <a href="https://${company.website}" target="_blank" style="font-weight: bold; color: white;">${company.website}</a>
+                        <a href="https://${company.website}" target="_blank" id="link" style="font-weight: bold; color: white;">${company.website}</a>
                     </h3>` : ''}
                 </div>
             </div>
