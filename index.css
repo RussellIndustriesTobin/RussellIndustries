@@ -239,7 +239,7 @@ nav {
 }
 
 .profile-card:hover {
-    background-color: rgba(31, 38, 61, 0.8); /* Change the background color on hover */
+    background-color: rgba(31, 38, 61, 1); /* Change the background color on hover */
      outline: 2px solid white; /* Add a white outline */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
 }
@@ -413,9 +413,8 @@ padding: 10px 15px;
 #contact-div {
       margin-top: 0px;
     background: linear-gradient(to right, #1D1330 10%, #1F263D 10%, #1F263D 90%, #1D1330 90%);
-    margin-bottom: 50px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 #elipses-img-1 {
@@ -445,4 +444,16 @@ padding: 10px 15px;
     height: 900px; /* Adjust as needed */
 }
 
+#footer {
+    height: 100px;
+    width: 100%;
+    background-color: #303030;    
+}
 
+#footer-text {
+    padding-top: 30px;
+     padding-left: 30px;
+     font-weight: normal;
+     text-align: center;
+    color: #aaaaaa;
+}
