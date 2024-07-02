@@ -458,3 +458,38 @@ padding: 10px 15px;
      text-align: center;
     color: #aaaaaa;
 }
+
+@media screen and (max-width: 1024px) {
+    .contact-text {
+  color: white;
+  /* Add left margin for spacing if needed */
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.profile-cards-row {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+  body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .content {
+        flex: 1;
+    }
+
+    #footer {
+        background-color: #303030;
+        height: 100px;
+        width: 100%;
+        text-align: center;
+    }
+}
